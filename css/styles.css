@@ -5,7 +5,7 @@ body {
 .jumbotron {
   background-color: aliceblue;
   margin-bottom: 0;
-  height: 550px;
+  min-height: 550px;
 }
 
 h1.header-quotation {
@@ -37,6 +37,7 @@ h1.header-quotation {
 .weather-icon {
   height: 200px;
   width: 200px;
+  transition: all 400ms linear;
 }
 
 .weather-icon:hover {
@@ -50,13 +51,14 @@ h1.header-quotation {
 }
 
 #weather-data-container {
-  height: 400px;
+  /*height: 400px;*/
   color: #ffffff;
   font-size: 20px;
 }
 
 .map-container {
   padding-right: 0;
+  padding-left: 0;
 }
 
 .input {
