@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="header-quotation">The most precise weather forecast.<br>
+                Check the weather forecast for your city:</h1>
+                <input id="search" class="input" type="text" placeholder="City"/>
+                <button id="search-btn" class="btn btn-primary btn-lg search-btn" disabled>SEARCH</button>&nbsp;<span id="errmsg"></span>
+                <p class="error-message"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid background-transition" id="weather-data-container">
+    <div class="row">
+        <div class="col-sm-7">
+            <h2 class="weather-forecast-title">Weather forecast for <span id="city"></span></h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <p id="weather-icon"></p>
+                </div>
+                <div class="col-sm-4">
+                    <p id="weather-status"></p>
+                    <p>Precipitation <span id="precipitation"></span> mm</p>
+                    <p>Temperature <span id="temperature"></span> °C</p>
+                    <p>Perceived temperature <span id="temperature-feelslike"></span> °C</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Pressure <span id="pressure"></span> hPa</p>
+                    <p>Wind velocity <span id="wind-velocity"></span> kPh</p>
+                    <p>Wind direction <span id="wind-direction"></span></p>
+                    <p>Humidity <span id="humidity"></span> %</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 map-container">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwVfmBwl7c30z7NAOfJSZC_U2ItSJBU6Y&callback=initMap"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+  background-color: aliceblue;
+}
+
+.jumbotron {
+  background-color: aliceblue;
+  margin-bottom: 0;
+  height: 550px;
+}
+
+h1.header-quotation {
+  color: dodgerblue;
+  padding-bottom: 50px;
+}
+
+.background-transition {
+  transition-duration: 500ms;
+}
+
+#errmsg {
+  color: red;
+  font-size: 30px;
+}
+
+.jumbotron .error-message {
+  font-size: 30px;
+  color: red;
+  padding-top: 30px;
+}
+
+.weather-forecast-title {
+  color: #ffffff;
+  font-size: 35px;
+  padding: 30px;
+}
+
+.weather-icon {
+  height: 200px;
+  width: 200px;
+}
+
+.weather-icon:hover {
+  transition: all 400ms linear;
+  transform: scale(1.4);
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#weather-data-container {
+  height: 400px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.map-container {
+  padding-right: 0;
+}
+
+.input {
+  height: 50px;
+  width: 350px;
+  border-radius: 20px;
+  font-size: 30px;
+  color: dodgerblue;
+}
+
+.input:focus {
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 0 50px 0 rgba(0, 106, 154, 0.75);
+  outline: none;
+  color: dodgerblue;
+}
+
+.search-btn {
+  padding: 20px 30px;
+  margin: 20px;
+  font-size: 30px;
+}
+
